@@ -12,8 +12,7 @@ Instruction for prometheus install
 
 1) ``sudo apt update && sudo apt install supervisor``
 2) ``sudo systemctl status supervisor``
-3) ``sudo nano /etc/supervisor/conf.d/idle.conf``
-4) ``sudo nano /etc/supervisor/conf.d/prometheus_metrics.conf``
+3) ``sudo nano /etc/supervisor/conf.d/prometheus_metrics.conf``
 
 ## Конфигурация supervisor
 
