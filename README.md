@@ -18,6 +18,7 @@ Instruction for prometheus install
 ## Конфигурация supervisor
 
 ```
+[program:prometheus]
 command=/usr/bin/node_exporter
 autostart=true
 autorestart=true
@@ -27,3 +28,20 @@ stdout_logfile=/var/log/node_exporter.out.log
 ## Перезапуск демона supervisor
 
 ``sudo supervisorctl reread``
+
+Результат: ``prometheus: available``
+
+## Открытие порта
+
+``sudo ufw allow 9100``
+
+Результат:
+
+```
+Rule added
+Rule added (v6)
+```
+
+## WEB GUI:
+
+``http://server-name:9100``
