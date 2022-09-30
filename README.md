@@ -17,3 +17,13 @@ Instruction for prometheus install
 
 ## Конфигурация supervisor
 
+```
+command=/usr/bin/node_exporter
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/node_exporter.err.log
+stdout_logfile=/var/log/node_exporter.out.log
+```
+## Перезапуск демона supervisor
+
+``sudo supervisorctl reread``
