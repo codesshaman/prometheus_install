@@ -1,5 +1,5 @@
 # prometheus_install
-Instruction for prometheus install
+Instruction for node exporter install
 
 ## Установка node_exporter
 
@@ -12,12 +12,12 @@ Instruction for prometheus install
 
 1) ``sudo apt update && sudo apt install supervisor``
 2) ``sudo systemctl status supervisor``
-3) ``sudo nano /etc/supervisor/conf.d/prometheus_metrics.conf``
+3) ``sudo nano /etc/supervisor/conf.d/node_exporter.conf``
 
 ## Конфигурация supervisor
 
 ```
-[program:prometheus]
+[program:node_exporter]
 command=/usr/bin/node_exporter
 autostart=true
 autorestart=true
@@ -28,7 +28,7 @@ stdout_logfile=/var/log/node_exporter.out.log
 
 ``sudo supervisorctl reread``
 
-Результат: ``prometheus: available``
+Результат: ``node_exporter: available``
 
 ## Открытие порта
 
