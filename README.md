@@ -1,4 +1,4 @@
-# prometheus_install
+# Node exporter install
 Instruction for node exporter install
 
 ## Скачивание node_exporter
